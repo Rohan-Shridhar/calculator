@@ -1,0 +1,99 @@
+body {
+  display: flex;
+  color: hsl(200, 100%, 90%);
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: hsl(0, 0%, 50%);
+  margin-top: 100px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  border: 2px solid hsl(0, 0%, 20%);
+  border-radius: 10px;
+}
+.display {
+  font-family: monospace;
+  font-size: 40px;
+  padding-left: 10px;
+  padding-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border: 5px solid black;
+  border-radius: 10px;
+  width: 6.7em;
+  height: 1em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: right;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 70%);
+  white-space: nowrap;
+  overflow-x: auto; 
+    overflow-y: hidden;
+}
+.display:hover{
+  transform: scale(1.05);
+}
+.num-btn {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 8.8em;
+  color: hsl(200, 100%, 90%);
+  background-color: hsl(0, 0%, 10%);
+}
+.rst-btn {
+  padding: 3px;
+  font-size: 1.3em;
+  border-radius: 10px;
+  margin: 20px 0px;
+  margin-right: 10px;
+  color: hsl(200, 100%, 90%);
+  background-color: hsl(0, 100%, 25%);
+}
+.del-btn {
+  padding: 3px;
+  font-size: 1.3em;
+  border-radius: 10px;
+  margin: 20px 0px;
+  margin-left: -20px;
+  color: hsl(200, 100%, 90%);
+  background-color: hsl(0, 100%, 25%);
+}
+.plus {
+  padding-right: 10px;
+}
+.minus {
+  padding-left: 35px;
+}
+.symbols button {
+  padding: 0px 30px;
+  margin-top: 3px;
+  margin-right: 20px;
+  font-size: 4em;
+  color: hsl(200, 100%, 90%);
+}
+.sym-btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  font-size: 3.05em;
+  color: hsl(200, 100%, 90%);
+  background-color: hsl(240, 100%, 25%);
+}
+.eql-btn {
+  margin-top: 5px;
+  padding-left: 54px;
+  padding-right: 54px;
+  border-radius: 10px;
+  font-size: 2.5em;
+  color: hsl(200, 100%, 90%);
+  background-color: hsl(120, 100%, 25%);
+}
