@@ -1,16 +1,31 @@
-# React + Vite
+# 🧮 Basic Calculator (ReactJS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✨ Overview
 
-Currently, two official plugins are available:
+This repository contains a fully functional **Basic Arithmetic Calculator** application built using **ReactJS** functional components. It demonstrates proficiency in handling complex user input, managing application state (`useState`), and implementing fundamental calculation logic.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🔗 Live Application
 
-## React Compiler
+The calculator is deployed and available for use here:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**[🚀 View Live Demo on Vercel](https://calculator-ten-sandy-64.vercel.app/)**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎨 Design and Features
+
+The calculator is styled after a **Retro Digital** aesthetic, ensuring a clear and intuitive user experience.
+
+### Key Features
+* **Basic Arithmetic:** Supports the four core operations: Addition (**+**), Subtraction (**-**), Multiplication (**\***), and Division (**/**).
+* **Input Control:** Includes dedicated buttons for clearing the entire display (**CLEAR**) and deleting the last input character (**ERASE**).
+* **Visual Styling:** Features a **Gray Casing**, **Dark Number Buttons** with light text, and **Color-Coded Function Keys** inspired by classic electronic devices.
+
+---
+
+## 🔧 Tools Used
+
+* **ReactJS** (Functional Components)
+* **JavaScript:** Utilized for parsing mathematical expressions and handling calculation logic.
+* **CSS:** Used for styling the retro digital interface and ensuring a responsive layout.
+
