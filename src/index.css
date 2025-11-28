@@ -1,99 +1,156 @@
 body {
   display: flex;
+  flex-direction: column;
   color: hsl(200, 100%, 90%);
-  justify-content: center;
+  background: linear-gradient(90deg,blue,yellow);
+  justify-content: space-between;
   align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 .container {
-  background-color: hsl(0, 0%, 50%);
-  margin-top: 100px;
-  padding-left: 20px;
-  padding-bottom: 10px;
-  padding-top: 20px;
+  background:linear-gradient(90deg,grey,black);
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-bottom: 8px;
+  padding-top: 12px;
+  padding-right: 15px;
   border: 2px solid hsl(0, 0%, 20%);
   border-radius: 10px;
+  min-width: 500px;
 }
 .display {
   font-family: monospace;
-  font-size: 40px;
+  font-size: 28px;
   padding-left: 10px;
-  padding-right: 0px;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 12px;
   border: 5px solid black;
   border-radius: 10px;
-  width: 6.7em;
-  height: 1em;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  width: auto;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3px;
+  margin-bottom: 8px;
   text-align: right;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(0, 0%, 70%);
+  background: linear-gradient(180deg,grey,rgb(176, 170, 170));
   white-space: nowrap;
   overflow-x: auto; 
     overflow-y: hidden;
 }
-.display:hover{
-  transform: scale(1.05);
-}
 .num-btn {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  border-radius: 10px;
+  flex: 1;
+  padding: 15px 10px;
+  border-radius: 8px;
   font-family: monospace;
-  font-size: 8.8em;
-  color: hsl(200, 100%, 90%);
-  background-color: hsl(0, 0%, 10%);
+  font-size: 1.5em;
+  color: hsl(200, 100%, 50%);
+  background:linear-gradient(180deg,hsl(0, 0%, 100%),hsl(0, 0%, 70%));
+  margin: 4px;
+  border: none;
+  cursor: pointer;
+}
+.num-btn:active {
+  background:linear-gradient(180deg,hsl(0, 0%, 70%),hsl(0, 0%, 100%));
 }
 .rst-btn {
-  padding: 3px;
-  font-size: 1.3em;
-  border-radius: 10px;
-  margin: 20px 0px;
-  margin-right: 10px;
+  flex: 1;
+  padding: 12px 8px;
+  font-size: 0.85em;
+  border-radius: 8px;
+  margin: 4px;
   color: hsl(200, 100%, 90%);
-  background-color: hsl(0, 100%, 25%);
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.rst-btn:active {
+  background-color: darkred;
 }
 .del-btn {
-  padding: 3px;
-  font-size: 1.3em;
-  border-radius: 10px;
-  margin: 20px 0px;
-  margin-left: -20px;
+  flex: 1;
+  padding: 12px 8px;
+  font-size: 0.85em;
+  border-radius: 8px;
+  margin: 4px;
   color: hsl(200, 100%, 90%);
-  background-color: hsl(0, 100%, 25%);
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.del-btn:active {
+  background-color: darkred;
 }
 .plus {
-  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  gap: 4px;
+}
+.plus button:active {
+  background: linear-gradient(90deg,purple,skyblue);
 }
 .minus {
-  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  gap: 4px;
+}
+.minus button:active {
+  background: linear-gradient(90deg,purple,skyblue);
+}
+.symbols {
+  display: flex;
+  gap: 4px;
+  margin: 4px 0;
 }
 .symbols button {
-  padding: 0px 30px;
-  margin-top: 3px;
-  margin-right: 20px;
-  font-size: 4em;
+  flex: 1;
+  padding: 12px 10px;
+  margin: 0;
+  font-size: 1em;
   color: hsl(200, 100%, 90%);
+  border: none;
+  cursor: pointer;
 }
 .sym-btn {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 15px;
-  padding-bottom: 5px;
-  border-radius: 10px;
-  font-size: 3.05em;
+  padding: 12px 10px;
+  border-radius: 8px;
+  font-size: 1em;
   color: hsl(200, 100%, 90%);
-  background-color: hsl(240, 100%, 25%);
+  background: linear-gradient(90deg,skyblue,purple);
+  border: none;
+  cursor: pointer;
+}
+.sym-btn:active {
+  background: linear-gradient(90deg,purple,skyblue);
 }
 .eql-btn {
-  margin-top: 5px;
-  padding-left: 54px;
-  padding-right: 54px;
-  border-radius: 10px;
-  font-size: 2.5em;
+  width: 100%;
+  margin-top: 6px;
+  padding: 14px 10px;
+  border-radius: 8px;
+  font-size: 1.2em;
   color: hsl(200, 100%, 90%);
-  background-color: hsl(120, 100%, 25%);
+  background:linear-gradient(90deg,lime,green);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.zero-btn {
+  padding: 8px 10px !important;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9em;
+  margin-top: 100px;
 }

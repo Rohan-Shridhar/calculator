@@ -55,6 +55,7 @@ function Calculator() {
   }
 
   return (
+  <div>
     <div className="container">
       <div>
         <p className="display">{content}</p>
@@ -96,6 +97,7 @@ function Calculator() {
         <Equal handleClick={handleAns} />
       </div>
     </div>
+  </div>
   );
 }
 export default Calculator;
